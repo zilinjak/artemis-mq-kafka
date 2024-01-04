@@ -13,6 +13,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: activemq-artemis-service
+            name: activemq-artemis
             port:
-              number: 8161  # Web Console port
+              number: 8161
