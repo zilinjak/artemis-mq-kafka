@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: activemq-artemis
+  name: activemq-artemis-deployment
   labels:
-    app: activemq-artemis
+    app: activemq-artemis-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: activemq-artemis
+      app: activemq-artemis-app
   template:
     metadata:
       labels:
-        app: activemq-artemis
+        app: activemq-artemis-app
     spec:
       containers:
         - name: activemq-artemis
