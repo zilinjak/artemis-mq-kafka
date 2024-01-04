@@ -9,8 +9,8 @@ spec:
     - protocol: TCP
       port: 61616
       targetPort: 61616
-      name: messaging port
+      name: "artemis-messaging-port"
     - protocol: TCP
       port: 8161
       targetPort: 8161
-      name: http port
+      name: "artemis-http-port"
