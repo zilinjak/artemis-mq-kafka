@@ -6,11 +6,11 @@ spec:
   selector:
     app: activemq-artemis
   ports:
-    - protocol: TCP
+    - name: "artemis-messaging-port"
+      protocol: TCP
       port: 61616
       targetPort: 61616
-      name: "artemis-messaging-port"
-    - protocol: TCP
+    - name: "artemis-http-port"
       port: 8161
       targetPort: 8161
-      name: "artemis-http-port"
+      protocol: TCP
