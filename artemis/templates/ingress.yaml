@@ -15,4 +15,11 @@ spec:
           service:
             name: activemq-artemis
             port:
+              number: 61616
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: activemq-artemis
+            port:
               number: 8161
